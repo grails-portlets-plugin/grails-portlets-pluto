@@ -16,7 +16,7 @@ class PortletsPlutoGrailsPlugin {
     // TODO Fill in these fields
     def author = "Kenji Nakamura"
     def authorEmail = "kenji_nakamura@diva-america.com"
-    def title = "Plugin summary/headline"
+    def title = "Apache Pluto portlets Plugin"
     def description = '''\\
 This plugin generates pluto portal server specific configuration files. 
 '''
