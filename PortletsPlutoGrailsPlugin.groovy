@@ -3,7 +3,7 @@ import org.springframework.core.io.Resource
 
 class PortletsPlutoGrailsPlugin {
     // the plugin version
-    def version = "0.1"
+    def version = "0.2"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.1 > *"
     // the other plugins this plugin depends on
@@ -33,7 +33,7 @@ This plugin generates pluto portal server specific configuration files.
     }
 
     def doWithWebDescriptor = {webXml ->
-        if (GrailsUtil.isDevelopmentEnv() && watchedResources.length > 0) {
+        if (watchedResources.length > 0) {
             log.info("Creating Pluto servlets for ${watchedResources.length} portlets...")
             for (Resource portlet in watchedResources) {
                 def portletName = portlet.filename - 'Portlet.groovy'
